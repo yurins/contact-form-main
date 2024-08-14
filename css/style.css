@@ -324,7 +324,7 @@ body {
 }
 @media screen and (min-width: 48rem) {
   body {
-    margin: 5rem 2.5rem;
+    margin: 0rem 2.5rem;
   }
 }
 
