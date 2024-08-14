@@ -1,0 +1,15 @@
+@use '../utility/index' as utility;
+
+button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: transparent;
+    background-color: utility.$green;
+    color: utility.$white;
+    margin-top: 2.5rem;
+    &:hover {
+        background-color: utility.$darkGray;
+        cursor: pointer;
+    }
+}

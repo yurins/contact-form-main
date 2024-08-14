@@ -1,0 +1,87 @@
+@use '../utility/_index' as utility;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+    @include utility.tablet {
+        margin: 5rem 2.5rem;
+    }
+}
+
+.contact {
+    margin-top: 0.625rem;
+    @include utility.tablet {
+        margin-top: 1.5rem;
+    }
+}
+
+.star {
+    padding-left: .5rem;
+}
+
+form {
+    padding: 1.5rem;
+    @include utility.tablet {
+        padding: 2.5rem;
+    }
+    h1 {
+        margin-bottom: 2rem;
+    }
+}
+
+.error-message {
+    margin: .5rem 0 1rem 0;
+    &:nth-of-type(4) {
+        margin: .5rem 0 0 0;
+    }
+}
+
+.query__radio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-group.query {
+    &:nth-child(2) {
+        margin-bottom: 0;
+    }
+}
+
+.form-consent {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    label {
+        padding-right: 1rem;
+        line-height: 150%;
+    }
+}
+
+.form__message {
+    margin-top: 2rem;
+}
+
+.popup__success {
+    display: flex;
+    position: fixed;
+    top: 6%;
+    @include utility.tablet {
+        top: 4%;
+        left: 22%;
+    }
+    @include utility.desktop {
+        left: 34%;
+    }
+}
+
+.popup__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}

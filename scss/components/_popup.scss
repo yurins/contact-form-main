@@ -1,0 +1,15 @@
+@use '../utility/index' as utility;
+
+.popup__success {
+    background-color: utility.$darkGray;
+    padding: 2rem;
+    width: 92%;
+    border-radius: .5rem;
+    @include utility.tablet {
+        width: 60%;
+    }
+
+    @include utility.desktop {
+        width: 32%;
+    }
+}

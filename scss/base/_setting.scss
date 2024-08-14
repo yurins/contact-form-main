@@ -1,0 +1,13 @@
+@use '../utility/_index' as utility;
+
+*{
+    font-family: utility.$font;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: utility.$lightGreen;
+}
+

@@ -1,0 +1,55 @@
+//typography.scss
+@use '../utility/index' as utility;
+
+label {
+    color: utility.$darkGray;
+}
+
+.star {
+    color: utility.$green;
+}
+
+form {
+    h1 {
+        font-size: 2rem;
+        color: utility.$darkGray;
+    }
+}
+
+.error-message {
+    color: utility.$red;
+    font-size: 1rem;
+    &:nth-child(4) {
+        margin-top: 0;
+    }
+} 
+
+.query__radio {
+    font-size: 1.125rem;
+    color: utility.$darkGray;
+}
+
+.form-consent {
+    label {
+        color: utility.$darkGray;
+    }
+}
+
+.popup__success {
+    .sent {
+        color: utility.$white;
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+
+    p {
+        color: utility.$lightGreen;
+        font-size: 1rem;
+        line-height: 150%;
+        font-weight: 300;
+    }
+}
+
+button {
+    font-size: 1.125rem;
+}

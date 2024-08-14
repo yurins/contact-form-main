@@ -1,0 +1,4 @@
+@use '../utility/index' as utility;
+form h1 {
+  font-size: 2rem;
+}
