@@ -15,7 +15,7 @@ document.getElementById("form__wrapper").addEventListener("submit", function(eve
             isValid = false;
         } else {
             errorMessage.classList.add("invisible"); 
-            field.classList.remove("invisible");
+            field.classList.remove("error-form");
 
             if (fieldId ==="email" && !isValidEmail(field.value.trim())) {
                 errorMessage.classList.remove("invisible");
